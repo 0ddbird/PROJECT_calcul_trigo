@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcules Trigonométriques</title>
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="sass/main.css" rel="stylesheet" />
+</head>
+<body>
+
+<h1>Calcul d'angle selon Cosinus</h1>
+<div id="wrapper">
+    <div>
+        <h2>Entrée</h2>
+        <form id="cosinus_form">
+            <label>
+                Valeur du cosinus
+                <input id="input_cosinus" type="number" step="any" min="-1" max="1"/>
+            </label>
+
+            <label>Décimales
+                <input id="input_decimals" type="number" value="20" min="0"/>
+            </label>
+
+            <button type="submit">Calculer</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Résultats</h2>
+        <div id="result_container">
+            <div class="row header">
+                <span>Cosinus</span>
+                <span>Angle (deg)</span>
+            </div>
+        </div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
