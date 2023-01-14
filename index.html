@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Calcul Trigonométriques</title>
+    <title>Calculs Trigonométriques</title>
     <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,13 @@
 </head>
 <body>
 
-<h1>Calcul d'angle selon Cosinus</h1>
+<div id="decimals_wrapper">
+    <label>Décimales
+        <input id="input_decimals" type="number" min="0" max="100" value="2"/>
+    </label>
+
+</div>
+
 <div id="wrapper">
     <div>
         <h2>Entrée</h2>
@@ -20,11 +26,27 @@
                 Valeur du cosinus
                 <input id="input_cosinus" type="number" step="any" min="-1" max="1"/>
             </label>
-
-            <label>Décimales
-                <input id="input_decimals" type="number" value="20" min="0"/>
+            <button type="submit">Calculer</button>
+        </form>
+        <form id="sinus_form">
+            <label>
+                Valeur du sinus
+                <input id="input_sinus" type="number" step="any" min="-1" max="1"/>
             </label>
-
+            <button type="submit">Calculer</button>
+        </form>
+        <form id="tangente_form">
+            <label>
+                Valeur de la tangente
+                <input id="input_tangente" type="number" step="any" min="-1" max="1"/>
+            </label>
+            <button type="submit">Calculer</button>
+        </form>
+                <form id="angle_form">
+            <label>
+                Valeur de l'angle
+                <input id="input_angle" type="number" step="any" min="0" max="360"/>
+            </label>
             <button type="submit">Calculer</button>
         </form>
     </div>
@@ -33,8 +55,9 @@
         <h2>Résultats</h2>
         <div id="result_container">
             <div class="row header">
-                <span>Cosinus</span>
-                <span>Angle (deg)</span>
+                <span>Type</span>
+                <span>Saisie</span>
+                <span>Résultat</span>
             </div>
         </div>
 </div>
