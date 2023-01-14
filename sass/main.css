@@ -114,6 +114,7 @@ form label {
   flex-direction: column;
   background-color: #2ecc71;
   padding: 1em;
+  gap: 0.25rem 0;
   border-radius: 10px;
 }
 
@@ -123,11 +124,19 @@ form label {
   grid-template-columns: 1fr 1fr 3fr;
   background-color: white;
   color: black;
+  padding: 0.25rem;
+  border-radius: 5px;
 }
 
 .header {
   color: white;
   background-color: #2ecc71;
+  font-weight: 700;
+}
+
+.res_value {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */
